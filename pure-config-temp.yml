@@ -1,4 +1,3 @@
-# 这是pure的config
 # menu
 menu:
   Home: .
@@ -189,7 +188,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: WangNing
   author_title: FE
-  author_description: 这家伙很懒，什么也没留下。
+  author_description: 毕业于西电，就职于百度，会点js。
   location: Beijing, China
   follow: https://github.com/iqshen
   # Social Links
