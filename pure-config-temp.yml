@@ -83,7 +83,7 @@ search:
 
 # Donate
 donate:
-  enable: false
+  enable: true
   # 微信打赏
   wechatpay:
     qrcode: images/donate/wechatpayimg.png
