@@ -184,4 +184,98 @@ categories: 技术
 </address>
 ```
 
+# 分组内容 (grouping content)
+
+## `p` 元素
+- 「段落」的显式表述
+  段落是主题接近的若干句子组成的文本块
+- 非优先考虑的选择
+  例如 address 的内容也是一个段落，但有更准确的语义
+
+## `hr` 元素
+- 原意为「horizontal rule」(水平分隔线)
+- HTML5 中重定义为不同主题内容间的分隔符(eg. 故事场景的转换)
+- 区块内容之间不需要用 hr 元素分隔
+
+## `pre` 元素
+- 表示已排版的内容
+- 代码片段 / ASCII art / ...
+
+## `blockquote` 元素
+- 引用的来自其他来源的内容
+- `cite` 属性表示该来源的 `URL`
+- 署名必须放在 `blockquote` 外
+``` html
+<p>His next piece was the aptly named <cite>Sonnet 130</cite>:</p>
+<blockquote cite="http://quotes.example.org/s/sonnet130.html">
+  <p>My mistress' eyes are nothing like the sun,<br>
+  Coral is far more red, than her lips red,<br>
+  [...]</p>
+</blockquote>
+```
+
+## `ol`, `ul`, `li` 元素
+- 有序 / 无序列表
+- 判断依据是改变列表项顺序是否影响表达
+- `ol` 下 `li` 元素的 `value` 属性代表该列表项的序号值
+``` html
+<p>Relegation zone:</p>
+<ol>
+<li value="18">Bolton Wanderers</li>
+<li>Blackburn Rovers</li>
+<li>Wolverhampton Wanderers</li>
+</ol>
+```
+
+## `dl`, `dt`, `dd` 元素
+- 名值对的集合
+- 术语定义表 / 元数据 / FAQ / ...
+``` html
+<dl>
+  <dt><dfn>happiness</dfn></dt>
+  <dd class="part-of-speech"><i><abbr>n.</abbr></i></dd>
+  <dd>The state of being happy.</dd>
+  <dd>Good fortune; success. <q>Oh <b>happiness</b>! It worked!</q></dd>
+  <dt><dfn>rejoice</dfn></dt>
+  <dd><i class="part-of-speech"><abbr>v.intr.</abbr></i> To be delighted oneself.</dd>
+  <dd><i class="part-of-speech"><abbr>v.tr.</abbr></i> To cause one to be delighted.</dd>
+</dl>
+```
+效果如下：
+<dl>
+  <dt><dfn>happiness</dfn></dt>
+  <dd class="part-of-speech"><i><abbr>n.</abbr></i></dd>
+  <dd>The state of being happy.</dd>
+  <dd>Good fortune; success. <q>Oh <b>happiness</b>! It worked!</q></dd>
+  <dt><dfn>rejoice</dfn></dt>
+  <dd><i class="part-of-speech"><abbr>v.intr.</abbr></i> To be delighted oneself.</dd>
+  <dd><i class="part-of-speech"><abbr>v.tr.</abbr></i> To cause one to be delighted.</dd>
+</dl>
+
+## `figure` 元素
+- 比较独立的、被主要内容引用的部分
+- 插图 / 图表 / 照片 / 代码 / ...
+- 通常会有一个标题 (`figcaption`)
+
+## `figcaption` 元素
+- 图表标题 / 图例 / 代码说明 / ...
+
+## `div` 元素
+- 本身无语义
+- 可以和 class, lang, title 等属性结合，为一系列连续的内容增加语义
+- 最后考虑的选择(但往往被滥用)
+
+## `main` 元素
+- 文档的主内容 / 应用的核心功能
+- HTML 文档中应该唯一
+
+# 文本级语义 (text-level semantics)
+
+## ...
+
+
+
+
+
+
 > 未完待续...
